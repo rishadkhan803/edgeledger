@@ -1,0 +1,230 @@
+/* F0nt Family */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Styling */
+html, body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #93CB52;
+}
+
+.l-heading {
+  font-size: 4rem;
+  line-height: 1.6rem;
+}
+
+.m-heading {
+  font-size: 2rem;
+  line-height: 1.4rem;
+}
+
+.lead {
+  font-size: 1.3rem;
+}
+
+/* Padding */
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
+
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+
+/* Backgroun */
+.bg-primary {
+  background:  #93CB52;
+  color: #fff;
+}
+
+.bg-light {
+  background: #F4F4F4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #F4F4F4;
+}
+
+/* Button */
+.btn {
+  background: #93CB52;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #7AB436;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #7AB436;
+}
+
+/* Nav Bar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  color: #fff;
+  background: #333;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#navbar ul li a {
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #93CB52;
+  border-radius: 5px;
+}
+
+/* Header: Showcase */
+#showcase {
+  background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Section: What We Do */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #93CB52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+#who .who-info ul {
+  list-style: none;
+}
+
+#who .who-info ul li {
+  padding: 0.4rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/* Section: Our Clients */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Section: Contact */
+#contact {
+  display: flex;
+}
+
+#contact .map,
+#contact .contact-form {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+}
