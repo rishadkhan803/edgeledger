@@ -37,9 +37,29 @@
     padding: 0.5rem;
   }
 
-  #showcase .showcase-content {
-    top: 110px;
+ 
+
+#showcase .showcase-content {
+
+  height: 100%;
+
+  /* Overlay */
+
+  position: absolute;
+
+  top: 110px;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.4);
+
 }
+
+
 
   .l-heading {
     font-size: 3.5rem;
