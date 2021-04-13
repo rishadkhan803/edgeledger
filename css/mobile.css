@@ -22,7 +22,9 @@
     align-items: center;
   }
 
-
+#showcase {
+  height: 100vh;
+  }
 
 
 
